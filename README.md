@@ -1,1 +1,1 @@
-[landing](https://landingpage.vitaorga.com/)
+https://landingpage.vitaorga.com/
