@@ -40,7 +40,12 @@ header .header_top .header_left img {
 header .header_top .header_right {
   margin-right: 5%;
 }
-.btn_align_justify{
+.btn_bars i{
+  font-size: 2rem;
+  color: #828282;
+  display: none;
+}
+#nav-toggle{
   display: none;
 }
 .btn {
@@ -517,8 +522,21 @@ footer .footer_vitao {
   .body .body_content .content_section_third .text_change_params p {
     margin-top: 0.5rem !important;
   }
+  .body_ourStore {
+    width: 90%;
+    margin: auto;
+    padding-top: 5rem;
+    border-bottom: 1px solid #c0bfbf;
+    height: auto!important;
+  }
 }
 @media only screen and (max-width: 680px) {
+  .header_right .btn{
+    display: none;
+  }
+  .btn_bars i{
+    display: inline;
+  }
   header .header_banner .banner_left {
     width: 20%;
   }
@@ -641,7 +659,13 @@ footer .footer_vitao {
     display: flex;
     justify-content: space-between;
   }
-  
+  .body_ourStore {
+    width: 90%;
+    margin: auto;
+    padding-top: 5rem;
+    border-bottom: 1px solid #c0bfbf;
+    height: auto!important;
+  }
 }
 @media only screen and (max-width: 561px) {
   header .header_banner .banner_left {
@@ -660,8 +684,18 @@ footer .footer_vitao {
     border-bottom: 1px solid #c0bfbf;
     height: auto!important;
   }
+  footer .footer_vitao {
+    display: block;
+   text-align: center;
+  }
 }
 @media only screen and (max-width: 480px) {
+  .header_right .btn{
+    display: none;
+  }
+  .btn_bars i{
+    display: inline;
+  }
   .body .body_section {
     height: 25rem;
   }
@@ -709,6 +743,9 @@ footer .footer_vitao {
     display: flex;
     justify-content: space-between;
   }
+  header .header_banner .banner_text .btn{
+    margin-top: 2rem !important;
+  }
   .body_icon .icon_form{
     height: auto;
   }
@@ -748,6 +785,11 @@ footer .footer_vitao {
     font-size: 72px;
   }
   header .header_banner .banner_text .btn{
-    margin-top: 2rem;
+    margin-top: 2rem!important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  header .header_banner .banner_text .btn{
+    margin-top: 3rem!important;
   }
 }
