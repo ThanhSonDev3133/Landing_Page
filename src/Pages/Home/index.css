@@ -40,12 +40,12 @@ header .header_top .header_left img {
 header .header_top .header_right {
   margin-right: 5%;
 }
-.btn_bars i{
+.btn_bars i {
   font-size: 2rem;
   color: #828282;
   display: none;
 }
-#nav-toggle{
+#nav-toggle {
   display: none;
 }
 .btn {
@@ -55,6 +55,9 @@ header .header_top .header_right {
   border-radius: 8px;
   width: 148px;
   height: 44px;
+  color: white;
+}
+.btn:hover {
   color: white;
 }
 .btn i {
@@ -79,7 +82,9 @@ header .header_banner .banner_right {
 header .header_banner .banner_right img {
   width: 100%;
 }
-
+header .header_banner .banner_right img:last-child {
+  display: none;
+}
 header .header_banner .banner_text {
   position: absolute;
   top: 21%;
@@ -527,14 +532,14 @@ footer .footer_vitao {
     margin: auto;
     padding-top: 5rem;
     border-bottom: 1px solid #c0bfbf;
-    height: auto!important;
+    height: auto !important;
   }
 }
 @media only screen and (max-width: 680px) {
-  .header_right .btn{
+  .header_right .btn {
     display: none;
   }
-  .btn_bars i{
+  .btn_bars i {
     display: inline;
   }
   header .header_banner .banner_left {
@@ -585,20 +590,23 @@ footer .footer_vitao {
   .body .body_content .content_section_third {
     margin-top: 0rem !important;
   }
-
+  .body .body_content .content_section_first .text-change h2 {
+    margin-top: 0rem !important;
+  }
   .body .body_content .content_section_first .content_params_md .body_text h2 {
     padding-top: 9rem !important;
   }
   .body .body_content .textChange {
     margin-top: -3rem !important;
   }
-  .body .body_content .content_section_third .text-change {
-    margin-top: 0rem !important;
-  }
   .body .body_content .content_section_third .text-change h2 {
-    margin-top: -0.5rem !important;
+    margin-top: 0.7rem !important;
   }
-  .body .body_content .content_section_third .content_params_padding_third .params_third_md{
+  .body
+    .body_content
+    .content_section_third
+    .content_params_padding_third
+    .params_third_md {
     padding-top: 22rem !important;
   }
 
@@ -606,7 +614,10 @@ footer .footer_vitao {
     height: 25rem;
     width: 100%;
   }
-  .content_section_second .content_params_padding_second_none .text_change_md .textChange {
+  .content_section_second
+    .content_params_padding_second_none
+    .text_change_md
+    .textChange {
     margin-top: 10rem !important;
   }
   .body .body_content .content_section .content_params .body_text {
@@ -633,12 +644,11 @@ footer .footer_vitao {
     margin-left: 0%;
   }
   .body_icon {
-    height: 40rem!important;
+    height: 40rem !important;
   }
   .body_icon .icon_form {
     display: block;
     height: 20rem;
-    
   }
   .body_icon .icon_form .form_text {
     width: 80%;
@@ -647,7 +657,7 @@ footer .footer_vitao {
   }
   .body_icon .icon_form .form_contact {
     width: 80%;
-    margin: auto
+    margin: auto;
   }
 }
 @media only screen and (max-width: 610px) {
@@ -658,13 +668,14 @@ footer .footer_vitao {
     width: 80%;
     display: flex;
     justify-content: space-between;
+    height: 30rem;
   }
   .body_ourStore {
     width: 90%;
     margin: auto;
     padding-top: 5rem;
     border-bottom: 1px solid #c0bfbf;
-    height: auto!important;
+    height: auto !important;
   }
 }
 @media only screen and (max-width: 561px) {
@@ -675,45 +686,60 @@ footer .footer_vitao {
     width: 85%;
     display: flex;
     justify-content: space-between;
+    height: 28rem;
   }
-  
+
   .body_ourStore {
     width: 90%;
     margin: auto;
     padding-top: 5rem;
     border-bottom: 1px solid #c0bfbf;
-    height: auto!important;
+    height: auto !important;
   }
   footer .footer_vitao {
     display: block;
-   text-align: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 513px){
+  .body .body_content .content_section_first .text-change h2 {
+    margin-top: 1rem !important;
+  }
+  .body .body_content .content_section_third .text-change h2 {
+    margin-top: 2rem !important;
   }
 }
 @media only screen and (max-width: 480px) {
-  .header_right .btn{
+  .header_right .btn {
     display: none;
   }
-  .btn_bars i{
+  header .header_banner .banner_right {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    height: 25.5rem;
+  }
+  .btn_bars i {
     display: inline;
   }
   .body .body_section {
     height: 25rem;
   }
-  .body .body_section h1{
-    font-size: 30px!important;
+  .body .body_section h1 {
+    font-size: 30px !important;
   }
-  .body_icon .icon_form{
+  .body_icon .icon_form {
     height: auto;
   }
-  .body_icon .icon_form .form_contact .form-group{
+  .body_icon .icon_form .form_contact .form-group {
     display: block;
     text-align: center;
   }
-  .body_icon .icon_form .form_contact .form-group .btn{
+  .body_icon .icon_form .form_contact .form-group .btn {
     margin-top: 1rem;
     width: 100%;
   }
-  .body_icon .icon_form .form_contact p{
+  .body_icon .icon_form .form_contact p {
     padding-bottom: 1rem;
     text-align: center;
   }
@@ -722,42 +748,49 @@ footer .footer_vitao {
     margin: auto;
     padding-top: 5rem;
     border-bottom: 1px solid #c0bfbf;
-    height: auto!important;
+    height: auto !important;
   }
 
   footer .footer_vitao {
     display: block;
-   text-align: center;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 440px) {
-  header .header_banner{
-    height: 30rem;
+  header .header_banner {
+    height: 24rem;
   }
   header .header_banner .banner_left {
-    width: 25%;
+    width: 24%;
+  }
+  header .header_banner .banner_text h1:nth-child(1) {
+    margin-top: 0.8rem;
+    font-size: 45px;
+  }
+  header .header_banner .banner_text h1:nth-child(2) {
+    font-size: 69px;
   }
   header .header_banner .banner_right {
     width: 75%;
-    height: 30rem;
+    height: 24rem;
     display: flex;
     justify-content: space-between;
   }
-  header .header_banner .banner_text .btn{
-    margin-top: 2rem !important;
+  header .header_banner .banner_text .btn {
+    margin-top: 0.8rem !important;
   }
-  .body_icon .icon_form{
+  .body_icon .icon_form {
     height: auto;
   }
-  .body_icon .icon_form .form_contact .form-group{
+  .body_icon .icon_form .form_contact .form-group {
     display: block;
     text-align: center;
   }
-  .body_icon .icon_form .form_contact .form-group .btn{
+  .body_icon .icon_form .form_contact .form-group .btn {
     margin-top: 1rem;
     width: 100%;
   }
-  .body_icon .icon_form .form_contact p{
+  .body_icon .icon_form .form_contact p {
     padding-bottom: 1rem;
     text-align: center;
   }
@@ -766,30 +799,81 @@ footer .footer_vitao {
     margin: auto;
     padding-top: 5rem;
     border-bottom: 1px solid #c0bfbf;
-    height: auto!important;
+    height: auto !important;
   }
   footer .footer_vitao {
     display: block;
-   text-align: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 427px) {
+  .body .body_content .content_section_first .text-change h2 {
+    margin-top: -2.5rem !important;
+  }
+  .body .body_content .content_section_third .text-change h2 {
+    margin-top: -2rem !important;
   }
 }
 @media only screen and (max-width: 421px) {
-  header .header_banner .banner_text{
-    width: 80%!important;
-    height: 30rem;
+  header .header_banner {
+    height: 24rem;
   }
-  header .header_banner .banner_text h1:nth-child(1){
+  header .header_banner .banner_left {
+    width: 24%;
+  }
+  header .header_banner .banner_right {
+    height: 24rem;
+  }
+  header .header_banner .banner_text {
+    width: 80% !important;
+    height: 24rem;
+  }
+  header .header_banner .banner_text h1:nth-child(1) {
     font-size: 48px;
   }
-  header .header_banner .banner_text h1:nth-child(2){
+  header .header_banner .banner_text h1:nth-child(2) {
     font-size: 72px;
   }
-  header .header_banner .banner_text .btn{
-    margin-top: 2rem!important;
+  header .header_banner .banner_text .btn {
+    margin-top: 0.5rem !important;
+  }
+  .body_text_up h2{
+    margin-top: -2.5rem!important;
   }
 }
 @media only screen and (max-width: 375px) {
-  header .header_banner .banner_text .btn{
-    margin-top: 3rem!important;
+  header .header_banner {
+    height: 25rem;
+  }
+  header .header_banner .banner_right .img_first {
+    display: none;
+  }
+  header .header_banner .banner_right img:last-child {
+    display: inline;
+  }
+  header .header_banner .banner_left {
+    width: 40% !important;
+  }
+  header .header_banner .banner_right {
+    height: 25rem;
+    width: 60% !important;
+  }
+  header .header_banner .banner_text {
+    width: 80% !important;
+    height: 21rem;
+  }
+  header .header_banner .banner_text h1:nth-child(1) {
+    font-size: 45px;
+  }
+  header .header_banner .banner_text h1:nth-child(2) {
+    font-size: 68px;
+  }
+  header .header_banner .banner_text .btn {
+    margin-top: 2rem !important;
+    width: 9rem;
+    height: 2.5rem;
+  }
+  .body_text_up h2{
+    margin-top: -2.5rem!important;
   }
 }

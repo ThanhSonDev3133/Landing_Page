@@ -1,7 +1,7 @@
 import React from 'react'
 import { Zoom } from "react-reveal";
 import img1 from "../../assets/img/Background-header.png";
-
+import banner_md from '../../assets/img/banner_md.png'
 export default function Banner() {
   return (
     <div className="header_banner">
@@ -9,7 +9,8 @@ export default function Banner() {
       <div className="banner_left"></div>
       <div className="banner_right">
         <span></span>
-        <img src={img1} alt="" />
+        <img src={img1} className="img_first" alt="" />
+        <img src={banner_md} alt="" />
       </div>
     </div>
     <div className="banner_text">

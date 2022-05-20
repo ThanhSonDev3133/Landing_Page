@@ -8,6 +8,7 @@ import Contact from "../../Component/Contact";
 import Investor from "../../Component/Investor";
 import Footer from "../../HOCs/Footer";
 import Product from "../../Component/Product";
+import { Fade } from "react-reveal";
 export default function Learning_Page() {
   return (
     <div className="home_page" id="home">
@@ -18,19 +19,19 @@ export default function Learning_Page() {
       <div className="body">
         <div className="body_section">
           <div className="section_text">
-            <Roll top>
+            <Fade top>
               <h1>“Patience! Sometimes patience is the key to victory.”</h1>
-            </Roll>
+            </Fade>
           </div>
           <div className="section_img">
             <img
               src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png"
               alt=""
             />
-            <Roll top>
+            <Fade top>
               <p>Name</p>
               <p>Function</p>
-            </Roll>
+            </Fade>
           </div>
         </div>
         <Product/>
